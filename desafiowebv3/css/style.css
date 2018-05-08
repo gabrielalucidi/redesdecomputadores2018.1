@@ -1,0 +1,67 @@
+.tooltip-inner{
+	min-width: 300px;
+}
+
+.form-group{
+    padding: 0 0 20px 40px !important;
+}
+
+.form-group select{
+    margin-right: 15px;
+}
+
+.btncss {
+	padding-top: 20px !important;
+}
+
+#search{
+	margin-left: 480px !important;
+}
+
+#setAll{
+	margin-left: 15px !important;
+}
+
+#setNon{
+	margin-left: 15px !important;
+}
+
+.btn-danger {
+	margin-left: 15px !important;
+}
+
+#button {
+	padding-top: 5px;
+	margin-left: 100px;
+}
+
+table{
+	margin-top: 10px;
+    white-space: nowrap; /* prevent column from break-line due to big text*/
+}
+
+
+th.headerSortUp {
+    background-image: url(../img/asc.gif) !important;
+    background-color: #3399FF;
+}
+
+th.headerSortDown {
+    background-image: url(../img/desc.gif) !important;
+    background-color: #3399FF;
+}
+
+th.header {
+    background-image: url(../img/asc_desc.gif);
+    cursor: pointer;
+    font-weight: bold;
+    background-repeat: no-repeat;
+    background-position: center left;
+    padding-left: 20px !important;
+    border-right: 1px solid #dad9c7;
+    margin-left: -1px;
+}
+
+#search{
+	margin-left: 100px;
+}
