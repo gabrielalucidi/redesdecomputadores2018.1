@@ -1,0 +1,199 @@
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<script type="text/JavaScript" src="js/script.js"></script>
+
+<meta charset='utf-8'>
+<div class="row">
+    <div class="side-menu">
+        <nav class="navbar navbar-default" role="navigation">
+            <div class="side-menu-container">
+                <ul class="nav navbar-nav">
+
+                    <li ><a href="#resumo"><span class="glyphicon glyphicon-flash"></span> Resumo</a></li>
+
+                    <li ><a href="#introducao"><span class="glyphicon glyphicon-send"></span> Introdução</a></li>
+
+                    <li class="panel panel-default" id="dropdown">
+                        <a data-toggle="collapse" href="#dropdown-lvl1-1">
+                            <span class="glyphicon glyphicon-thumbs-up"></span> Motivação <span class="caret"></span>
+                        </a>
+                        <div id="dropdown-lvl1-1" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <ul class="nav navbar-nav">
+                                    <li><a href="#motivacao">Quais fatores levaram à criação da tecnologia</a></li>
+                                    <li><a href="#definicao">Definição</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="panel panel-default" id="dropdown">
+                        <a data-toggle="collapse" href="#dropdown-lvl1-2">
+                            <span class="glyphicon glyphicon-pencil"></span> Arquitetura <span class="caret"></span>
+                        </a>
+                        <div id="dropdown-lvl1-2" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <ul class="nav navbar-nav">
+                                    <li><a href="#funcionamento">Componentes do sistema e funcionamento geral</a></li>
+                                    </li>
+                                    <li class="panel panel-default" id="dropdown">
+                                        <a data-toggle="collapse" href="#dropdown-lvl2-2">
+                                            OpenFLow <span class="caret"></span>
+                                        </a>
+                                        <div id="dropdown-lvl2-2" class="panel-collapse collapse">
+                                            <div class="panel-body">
+                                                <ul class="nav navbar-nav">
+                                                    <li><a href="#open_flow">Open Flow</a></li>
+                                                    <li><a href="#open_vswitch">Open vSwitch</a></li>
+                                                    <li><a href="#flow_visor">FlowVisor</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li><a href="#programacao_elementos_rede">Programação dos elementos de rede </a></li>
+                                    <li><a href="#virtualizacao">Virtualização</a></li>
+                                    <li><a href="#comutadores">Comutadores</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="panel panel-default" id="dropdown">
+                        <a data-toggle="collapse" href="#dropdown-lvl1-3">
+                            <span class="glyphicon glyphicon-ok-circle"></span> Aplicações <span class="caret"></span>
+                        </a>
+                        <div id="dropdown-lvl1-3" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <ul class="nav navbar-nav">
+                                    <li><a href="#como_aplicar_diferentes_contextos">Como aplicar a diferentes contextos</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="panel panel-default" id="dropdown">
+                        <a data-toggle="collapse" href="#dropdown-lvl1-4">
+                            <span class="glyphicon glyphicon-fire"></span> Desafios <span class="caret"></span>
+                        </a>
+                        <div id="dropdown-lvl1-4" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <ul class="nav navbar-nav">
+                                    <li><a href="#performance">Performance</a></li>
+                                    <li><a href="#escalabilidade">Escalabilidade</a></li>
+                                    <li><a href="#seguranca">Segurança</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+
+
+                    <li><a href="#conclusoes"><span class="glyphicon glyphicon-certificate"></span> Conclusões</a></li>
+                    <li><a href="#bibliografia"><span class="glyphicon glyphicon-book"></span> Bibliografia</a></li>
+
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <div class="container-fluid">
+        <div class="side-body">
+            <h1> Redes Definidas por Software (SDN) </h1>
+            <h3> UFRJ - EEL878 - Redes de Computadores I - Primeiro semestre de 2018</h3>
+            <br>
+            <h2 id="resumo"> Resumo </h2>
+            <h3> Alunos: </h3>
+            <p>Gabriela Lemos Lúcidi Pinhão<br/>
+            Lucas Vieira Gama<br/>
+            Raimundo do Espírito Santo Costa</p>
+            <h3> Professor: </h3>
+            <p>Luis Henrique M. K. Costa</p>
+            <h3> Direitos autorais: </h3>
+            <p><i>"Este trabalho foi totalmente produzido pelos autores que declaram não terem violado os direitos autorais de terceiros, sejam eles pessoas físicas ou jurídicas. Havendo textos, tabelas e figuras transcritos de obras de terceiros com direitos autorais protegidos ou de domínio público tal como idéias e conceitos de terceiros, mesmo que sejam encontrados na Internet, os mesmos estão com os devidos créditos aos autores originais e estão incluídas apenas com o intuito de deixar o trabalho autocontido. O(s) autor(es) tem(êm) ciência dos Artigos 297 a 299 do Código Penal Brasileiro e também que o uso do artifício de copiar/colar texto de outras fontes e outras formas de plágio é um ato ilícito, condenável e passível de punição severa. No contexto da Universidade a punição não precisa se restringir à reprovação na disciplina e pode gerar um processo disciplinar que pode levar o(s) aluno(s) à suspensão;"</i></p>
+            <br>
+            <h2 id="introducao"> Introdução </h2>
+            <p>Os protocolos utilizados atualmente para a construção de redes de computadores são complexos e de difícil gerenciamento. Se uma mudança de configuração é necessária, deve ser feita em cada componente da rede, fazendo uso de linguagem de baixo nível e seguindo as especificações de cada componente, que varia de acordo com o fabricante. Não é possível com a infraestrutura de redes atual configurar ou reconfigurar componentes automaticamente de acordo com a demanda de pacotes ou a partir de uma estratégia estabelecida. Tal inflexibilidade representa um entrave para a evolução da infraestrutura, tornando-se "engessada".</p>
+            <p>Nesse contexto, surgiram diversos paradigmas com o intuito de flexibilizar a infraestrutura de redes de computadores, dentre eles o de Redes Definidas por Software (SDN) que prevê a viabilização da programação de redes, possibilitando configuração automática, redução dos custos de manutenção de operação destas. A tecnologia SDN prevê prevê a separação da camada de dados e de controle que passam a ser controladas por softwares de interface padrão de programação (APIs), transferindo poder e complexidade a nível de hardware para software.</p>
+            <br>
+            <h2> Motivação </h2>
+            <h3 id="motivacao"> Quais fatores levaram à criação da tecnologia </h2>
+            <p>O surgimento das tecnologias de big data e machine learning impulsionou o tratamento de conjunto de dados de volumes jamais imaginados. Elas impulsionaram também o surgimento de inúmeras aplicações de sistemas distribuídos fazendo comunicação por meio de redes de computadores. Com isso, a quantidade de tráfego vem aumentado consideravelmente e com arquitetura de redes IP, utilizada atualmente, é difícil e cara a adaptação e gerenciamento de redes para suprir tal demanda, que tende a aumentar cada vez mais.</p>
+            <p>Por outro lado, com a internet sendo essencial torna-se impossível colocá-la fora do ar para a troca da infraestrutura da rede. Dessa forma, a implantação de novas tecnologias no campo deve prever uma substituição gradual, sem a paralisação da infraestrutura existente.</p>
+            <p>O SVN surge como uma solução pois permitiria a configuração de redes por meio de aplicações programáveis e sem necessidade de manuseio de hardware, barateando e flexibilizando a estrutura. Ao mesmo tempo a sua implantação não implicaria num desligamento total da internet.</p>
+            <h3 id="definicao"> Definição </h2>
+            <p>A principal característica da tecnologia é a separação dos planos de controle e de dados da rede, que atualmente atuam em conjunto e não é possível gerenciá-los independentemente.</p>
+            <br>
+            <h2> Arquitetura </h2>
+            <h3 id="funcionamento"> Componentes do sistema e funcionamento geral </h2>
+            <p>O SVN atua em três planos: o plano de aplicação, plano de controle e plano de dados. No plano de controle fica o componente chave, o controlador, responsável por receber instruções do plano de aplicação e aplicar as mudanças necessárias no plano de dados para que esses sejam redirecionados. No plano de aplicação ficam os softwares responsáveis pelo gerenciamento da rede. No plano de dados fica o hardware necessário para o encaminhamento de dados.</p>
+            <p>Entre os planos existem APIs que interceptam a comunicação entre eles. A API Northbound e responsável pela comunicação entre o plano de aplicação e o plano de controle, oferecendo funções a serem chamadas pelas aplicações que realizam modificações específicas no plano de dados, impedindo que as aplicações tenham livre-acesso à ele.  A API Southbound e responsável pela comunicação do plano de dados com o plano de controle. O protocolo OpenFlow e uma das APIs Southbound mais utilizadas e será abordada adiante.</p>
+            <br>
+            <figure>
+                <img src="images/fig_arquitetura.png" class="center-block">
+                <figcaption style="text-align: center;""><b>Figura 1:</b> Infraestrutura básica de uma SVN. Extraída do trabalho <i>Software-Defined Networking Using OpenFlow: Protocols, Applications and Architectural Design Choices</i> em <a href='http://www.mdpi.com/1999-5903/6/2/302'>http://www.mdpi.com/1999-5903/6/2/302</a></figcaption>
+            </figure>
+            <br>
+            <h3 id="open_flow"> OpenFLow </h3>
+            <p>O protocolo OpenFlow é um dos protocolos existentes  e um dos principais responsáveis pela implementação atual de SDN aberta e baseada em padrões. O desenvolvimento do OpenFlow teve início em 2007 e sua evolução tem recebido contribuições da academia e da indústria. O protocolo OpenFlow foi proposto inicialmente como uma alternativa para facilitar a inovação em ambientes de rede universitários, concebido originalmente por pesquisadores da Universidade de Stanford e da Universidade da Califórnia em Berkeley, o padrão tem sido mantido pela Open Networking Foundation (ONF3 ). A ONF e uma organização direcionada ao usuário, dedicada à promoção e adoção de SDN através do desenvolvimento de padrões abertos e que possui como membros algumas das principais empresas da área de tecnologia, tais como Google, Microsoft, Cisco, AT&T, Juniper, Oracle, dentre outras.</p>
+            OpenFlow e outros protocolos de SDN têm gerado interesse devido ao grande controle que eles oferecem a<p>os desenvolvedores de software de controle de rede. Ao criar uma interface normalizada, acessível pela rede para controlar o plano de dados de equipamentos de rede, a lógica do plano de controle pode ser movida de dispositivos de rede individuais para um controlador centralizado ou um grupo de controladores. Ao implementar a lógica de controle no controlador, mudanças de protocolo de rede e requisitos complexos de engenharia de tráfego podem ser ajustados reconfigurando, atualizando ou trocando o controlador ao invés de atualizar ou substituir o equipamento de rede.</p>
+            <p>O OpenFlow separa a rede em dois planos: o plano de controle, responsável pela execução dos algoritmos de controle da rede, e o plano de dados, responsável pelo encaminhamento e tratamento dos pacotes de rede em si. O OpenFlow se baseia em encaminhamento por fluxos, se aproveitando do fato de que grande parte dos fabricantes de comutadores e roteadores atuais implementam uma tabela de fluxos e coleta de estatísticas diretamente nos equipamentos.</p>
+            <p>OpenFlow define um protocolo-padrão para determinar as ações de encaminhamento de pacotes em dispositivos de rede, como, por exemplo, comutadores, roteadores e pontos de acesso sem fio. As regras e ações instaladas no hardware de rede são responsabilidade de um elemento externo, denominado controlador, que pode ser implementado em um servidor comum conforme figura abaixo.</p>
+            <br>
+            <figure>
+                <img src="images/fig_arquitetura2.png" class="center-block">
+                <figcaption style="text-align: center;""><b>Figura 2:</b> Exemplo de uma rede com OpenFlow habilitado. Extraída do trabalho <i>OpenFlow e redes definidas por software: Um novo paradigma de controle e inovação em redes de pacotes</i> em: <a href='https://intrig.dca.fee.unicamp.br/wp-content/plugins/papercite/pdf/rothenberg2010openflow.pdf'> https://intrig.dca.fee.unicamp.br/wp-content/plugins/papercite/pdf/rothenberg2010openflow.pdf</a></figcaption>
+            </figure>
+            <br>
+            <p> A principal abstração utilizada na especificação OpenFlow é o conceito de fluxo. Um fluxo é constituído pela combinação de campos do cabeçalho do pacote a ser processado pelo dispositivo, conforme Figura 3. As tuplas podem ser formadas por campos das camadas de enlace, de rede ou de transporte, segundo o modelo TCP/IP. Deve-se enfatizar que a abstração da tabela de fluxos ainda está sujeita a refinamentos, com o objetivo de oferecer uma melhor exposição dos recursos do hardware e, nesse caso, permitir a concatenação de várias tabelas já disponíveis, como, por exemplo, tabelas IP/Ethernet/MPLS. Nesse sentido, a contribuição mais importante do paradigma do OpenFlow é a generalização do plano de dados – qualquer modelo de encaminhamento de dados baseado na tomada de decisão fundamentada em algum valor, ou combinação de valores, dos campos de cabeçalho dos pacotes pode ser suportado.</p>
+            <br>
+            <figure>
+                <img src="images/fig_arquitetura3.png" class="center-block">
+                <figcaption style="text-align: center;""><b>Figura 3:</b> Cabeçalhos disponíveis no OpenFlow para a especificação de fluxos. Extraída do trabalho <i>OpenFlow e redes definidas por software: um novo paradigma de controle e inovação em redes de pacotes </i> em: <a href='https://intrig.dca.fee.unicamp.br/wp-content/plugins/papercite/pdf/rothenberg2010openflow.pdf'> https://intrig.dca.fee.unicamp.br/wp-content/plugins/papercite/pdf/rothenberg2010openflow.pdf</a></figcaption>
+            </figure>
+            <br>
+            <h4 id="open_vswitch"> Open vSwitch </h4>
+            <p>Open Switch (OVS), é uma implementação de código aberto de um comutador multicamada virtual distribuído. O objetivo principal do Open vSwitch é fornecer uma pilha de comutação para ambientes de virtualização de hardware, enquanto suporta múltiplos protocolos e padrões usados ​​em redes de computadores. o código-fonte do projeto é distribuído sob os termos da licença apache 2.0.</p>
+            <p>Ele foi projetado para permitir a automação maciça de rede por meio de extensão programática, enquanto ainda suporta interfaces e protocolos de gerenciamento padrão (por exemplo, netflow, sflow, ipfix, rspan, cli, lacp, 802.1ag). Além disso, ele foi projetado para oferecer suporte à distribuição em vários servidores físicos, semelhante ao vNetwork da VMware vswitch distribuído ou ao nexus 1000v da cisco.</p>
+            <p>O Open vSwitch é usado em vários produtos e executado em muitos ambientes grandes de produção (alguns muito, muito grandes). cada versão estável é executada por meio de um conjunto de regressão de centenas de testes no nível de sistema e milhares de testes unitários.</p>
+            <p>O OpenvSwitch foi projetado para permitir configuração e programação de forma automatizada. Ele integra com diversas plataformas e hypervisors. Dentro de ambientes virtualizados a taxa de mudanças é alta e um software como o OpenvSwitch que se adapta dinamicamente e facilita o controle da rede.</p>
+            <br>
+            <figure>
+                <img src="images/fig_arquitetura4.png" class="center-block">
+                <figcaption style="text-align: center;""><b>Figura 4:</b> Comutador multicamada virtual distribuído. Extraída de <a href='https://www.openvswitch.org'> https://www.openvswitch.org</a></figcaption>
+            </figure>
+            <br>
+            <h4 id="flow_visor"> FlowVisor </h4>
+            <h3 id='programacao_elementos_rede'> Programação dos elementos de rede </h3>
+            <h3 id='virtualizacao'> Virtualização </h3>
+            <h3 id='comutadores'> Comutadores </h3>
+            <br>
+            <h2> Aplicações </h2>
+            <h3 id='como_aplicar_diferentes_contextos'> Como aplicar a diferentes contextos </h3>
+            <br>
+            <h2> Desafios </h2>
+            <h3 id='performance'> Performance </h3>
+            <p>Um desafio constante da arquitetura SDN é a eficiência da rede, que agora possui camadas de processamento distintas. Ao aumentar a flexibilidade para novas funcionalidades e requisitos, adiciona-se camadas de processamento necessário, diminuindo a vazão e tempo de resposta. Consideramos esta flexibilidade a mudanças como a flexibilidade da arquitetura, enquanto a vazão e tempo de resposta como a performance da rede. Nesse sentido, elas são inversamente relacionadas.</p>
+            <p>Ainda é um desafio configurar redes com velocidades acima de 100 Gb/s. Na figura abaixo é apresentado a relação de flexibilidade com a performance alcançada, onde é possível perceber que diminui-se a flexibilidade para aumentar a performance, substituindo unidades de processamento mais genéricas, como CPUs, por hardware cada vez mais dedicado, chegando a ASSPs e ASICs.</p>
+            <br>
+            <figure>
+                <img src="images/fig_desafio.png" class="center-block">
+                <figcaption style="text-align: center;""><b>Figura 5:</b> Network processing: performance vs. programmability, em <a href='https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=6553676'>https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=65536762</a></figcaption>
+            </figure>
+            <br>
+            <p>Arquiteturas em que os controladores são processadores de objetivo genérico (CPUs/GPPs) possuem maior flexibilidade e agilidade a mudanças, além da maior facilidade de implementação, através de linguagens de alto nível. Porém essa camada de abstração apresenta a sobrecarga de processamento, limitando esse modela a performances de dezenas de gigabits por segundo, com o uso de técnicas de balanceamento de carga.</p>
+            <p>Processadores de fluxo de rede (NPU/NFP) são unidades de processamento com adaptações em hardware e em interfaces, aumentando sua performance e diminuindo a dissipação de calor. Entretanto exigem um conhecimento específico de sua arquitetura e comandos, para o melhor aproveitamento de seu processamento paralelo. Arquiteturas com NPUs no estado da arte conseguem atingir acima de 200 Gb/s por dispositivo.</p>
+            <p>ASSPs (Application-specific standard products) são hardwares especializados desenvolvidos para suportar grandes volumes de dados. Nos últimos anos foram desenvolvidos ASSPs com o foco em SDNs, suportando por exemplo OpenFlow, e atingindo taxas acima de 500 GB/s por segundo.</p>
+            <p>Finalmente, considerando a flexibilidade desejada versus a performance exigida, arquiteturas podem ser mistas. Por exemplo, com CPUs, NFPs e ASSPs, podem prover alta performance para o fluxo comum, e flexibilidade para novos fluxos de roteamento.</p>
+            <h3 id='escalabilidade'> Escalabilidade </h3>
+            <h3 id='seguranca'> Segurança </h3>
+            <p>A arquitetura SDN retorna com alguns problemas de segurança que eram mitigados pela arquitetura antiga. Com dispositivos de rede proprietário dos fabricantes, de configuração diferentes de acordo com a empresa, antes um ataque que explorava uma vulnerabilidade de um modelo, afetava apenas a parte da rede composta pelos respectivos dispositivos. Agora com a alta configuração provida por um modelo centralizado, de interface aberta e conhecida, torna-se extremamente sensível, onde um ataque pode comprometer a rede como um todo.</p>
+            <p>Potenciais vulnerabilidades podem ser existir, por exemplo, pela camada de autenticação e autorização, pois o sistema pode ser controlado por diferentes organizações que têm acesso a rede. Diferentes níveis de acesso são necessários, pois diferentes agentes podem interagir com a configuração da rede. Além disso, por se tratar de padrões abertos e conhecidos, a fim de facilitar a integração por diferentes fabricantes, permite que atacantes conheçam toda a arquitetura e comandos. Uma vez invadida, o atacante torna-se capaz rapidamente e facilmente ter controle, podendo manipular a rede, os nós, e até usuários individuais.</p>
+            <p>Outra potencial vulnerabilidade se origina da centralização do controle da rede. Nesse nó está sujeito a ataques, por exemplo, de negação de serviço (DOS/DDOS). Pela arquitetura da SDN, quando um novo fluxo não encontrado na tabela é recebido, há duas opções, enviar o pacote completo ou apenas o cabeçalho para o controlador resolver o fluxo. Enviar o fluxo completo sobrecarrega esse canal, podendo congestiona o mesmo e comprometer a performance da rede. Caso seja enviado somente o cabeçalho, o restante do pacote precisa ser armazenado em um buffer. Este, por sua vez, é custoso e limitado, podendo ser consumido por completo, acarretando na perda de pacotes.</p>
+            <br>
+            <h2 id='conclusoes'> Conclusões </h2>
+            <br>
+            <h2 id='bibliografia'> Bibliografia </h2>
+        </div>
+    </div>
+</div>
