@@ -94,7 +94,7 @@
 
     <div class="container-fluid">
         <div class="side-body">
-            <h1> Redes Definidas por Software (SDN) </h1>
+            <h1> Redes Definidas por Software </h1>
             <h3> UFRJ - EEL878 - Redes de Computadores I - Primeiro semestre de 2018</h3>
             <br>
             <h2 id="resumo"> Resumo </h2>
@@ -219,6 +219,7 @@
                 <img src="images/fig_arquitetura7.png" class="center-block" height="176" width="400">
                 <figcaption style="text-align: center;""><b>Figura 7:</b> A rede de divisão de aplicativos. Fonte: T. D. Nadeau e K. Gray, “SDN: Software Defined Networks: An Authoritative Review of Network Programmability Technologies,” O’Reilly Media, vol. 1, 2013.</figcaption>
             </figure>
+            <br>
             <p>Para isso, uma resposta é usar interfaces que sejam interfaces de aplicações amigáveis RESTful (transferência representacional de estado). Acontece que essas interfaces são geralmente definidas usando abordagens modernas, como JSON (JavaScript Object Notation). O JSON resolve muitos dos defeitos que acabamos de descrever porque seu esquema é definido usando XML legível por humanos, é auto-referencial, é hierárquico e é algo que é facilmente incorporado em aplicativos Java - a linguagem de programação de aplicativos mais comum da última década.</p>
             <p>As interfaces para programação dos dispositivos da rede mais comuns são:</p>
             <ul>
@@ -291,16 +292,16 @@
             <p>Entretanto, esta tecnologia ainda se encontra em amadurecimento, carecendo de grandes casos de uso para a garantia de qualidade e o aquecimento do mercado, para uma migração de tecnologia por parte dos grandes operadores de rede.</p>
             <br>
             <h2 id='perguntas'> Perguntas </h2>
-            <p><b>Porque a infraestrutura de rede atual é considerada "engessada"? Como a tecnologia SDN visa flexibilizá-la?</b></p>
+            <p><b>1- Porque a infraestrutura de rede atual é considerada "engessada"? Como a tecnologia SDN visa flexibilizá-la?</b></p>
             <p>Não é possível com a infraestrutura de redes atual configurar ou reconfigurar componentes automaticamente. Qualquer simples mudança requer o uso de linguagem de baixo nível e o conhecimento das especificações de cada componente da rede, que pode variar de acordo com o fabricante.</p>
             <p>Nesse contexto, surge o paradigma de Redes Definidas por Software (SDN) que prevê a viabilização da programação de redes, possibilitando configuração automática e redução dos custos de manutenção e de operação destas.</p>
-            <p><b>Quais os componentes principais da tecnologia SDN? Quais as funções de cada plano?</b></p>
+            <p><b>2- Quais os componentes principais da tecnologia SDN? Quais as funções de cada plano?</b></p>
             <p>O SVN atua em três planos: o plano de aplicação, plano de controle e plano de dados. No plano de controle fica o componente chave, o controlador, responsável por receber instruções do plano de aplicação e aplicar as mudanças necessárias no plano de dados para que esses sejam redirecionados. No plano de aplicação ficam os softwares responsáveis pelo gerenciamento da rede. No plano de dados fica o hardware necessário para o encaminhamento de dados. Entre os planos, existem APIs, chamadas API Northbound e API Southbound, responsáveis por facilitar a comunicação entre eles.</p>
-            <p><b>Explique como ocorre o encaminhamento de pacotes no protocolo OpenFLow.</b></p>
+            <p><b>3- Explique como ocorre o encaminhamento de pacotes no protocolo OpenFLow.</b></p>
             <p>O protocolo OpenFlow se baseia no conceito de fluxos. Um fluxo é constituído pela combinação de campos do cabeçalho do pacote a ser processado pelo dispositivo. Nesse sentido, a contribuição mais importante do paradigma do OpenFlow é a generalização do plano de dados – qualquer modelo de encaminhamento de dados é baseado na tomada de decisão fundamentada em algum valor, ou combinação de valores, dos campos de cabeçalho dos pacotes. Dependendo de como está configurado o controlador uma série de ações podem ser tomadas.</p>
-            <p><b>O que é virtualização de rede e por que o FLowVisor é necessário?</b></p>
+            <p><b>4- O que é virtualização de rede e por que o FLowVisor é necessário?</b></p>
             <p>Virtualização consiste em abstrair e compartilhar uma estrutura física a uma virtual, possibilitando que múltiplas plataformas virtuais rodem sobre uma única estrutura física. Os protocolos OpenFlow não fornecem diretamente o fatiamento da rede (um recurso atraente que permite a capacidade de dividir um elemento em grupos controlados separadamente ou uma rede em domínios administrativos separados). A ferramenta FlowVisor surge para suprir esta necessidade atuando como um proxy transparente entre vários controladores e elementos.</p>
-            <p><b>Por que a arquitetura SDN é mais insegura do que arquiteturas de rede tradicionais?</b></p>
+            <p><b>5- Por que a arquitetura SDN é mais insegura do que arquiteturas de rede tradicionais?</b></p>
             <p>Porque o controlador, parte lógica que define o comportamento dos fluxos da rede, é centralizado, tornando-se um ponto único de falha da rede inteira.</p>
             <br>
             <h2 id='bibliografia'> Bibliografia </h2>
